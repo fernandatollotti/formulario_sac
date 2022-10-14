@@ -1,0 +1,45 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* reset */
+* { margin: 0;padding: 0;box-sizing: border-box; }
+ul { list-style: none; }
+a { text-decoration: none; }
+input, select, textarea, button { border: none; }
+
+/* config */
+body { font-family: 'Poppins', sans-serif;font-size: 16px;background: #dddddd; }
+.container { max-width: 1140px;margin: 30px auto;padding: 20px; }
+.row { display: flex;flex-direction: row; }
+.col_6 { width: 50%; }
+.col_12 { width: 100%; }
+h1 { font-size: 32px; }
+em { color: #f00000;font-weight: 500; }
+input, select, textarea { background: #ededed;padding: 10px 20px;border-radius: 10px;font-size: 16px; }
+input, select { height: 40px; }
+
+/* form */
+.form_sac { background: #fff;max-width: 720px;margin: 0 auto;padding: 40px;border-radius: 25px;box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); }
+.form_sac .content { text-align: center;margin-bottom: 40px; }
+.form_sac .content p { margin-top: 12px; }
+.form_sac label { font-weight: 500;margin-bottom: 10px; }
+.form_sac .input_group { flex: 1;display: flex;flex-direction: column;margin: 10px 5px; }
+.form_sac .radio_group { display: flex;flex-direction: row; }
+.form_sac .radio_group .opt > label { display: flex;align-items: center;font-weight: 400;cursor: pointer; }
+.form_sac .radio_group .opt label > input { margin: 0 8px; }
+.form_sac .upload { border: 1px dashed #ccc;background: #ededed;height: 180px;display: flex;justify-content: center;align-items: center; }
+.form_sac .upload input { display: none; }
+.form_sac .upload label { background: orange;color: #fff;padding: 6px 20px;cursor: pointer; }
+.form_sac .btn { margin-top: 20px; }
+.form_sac .btn .btn_main { background: #1677fb;color: #fff;font-size: 18px;display: block;margin: 0 auto;padding: 10px 30px;cursor: pointer; }
+.form_sac .btn .btn_main:hover { background: #0067f3; }
+
+/* responsive */
+@media (max-width: 512px)
+{
+  .row { flex-direction: column; }
+  .col_6 { width: 100%; }
+  .form_sac .radio_group { flex-direction: column; }
+  .form_sac .upload label { margin-bottom: 0;font-size: 14px; }
+  .form_sac .upload { height: 120px; }
+}

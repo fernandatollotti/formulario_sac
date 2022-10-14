@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAC - Serviço de Atendimento ao Cliente</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="sac">
+      <div class="container">
+        <form class="form_sac" id="form_sac">
+          <div class="row">
+           <div class="col_12">
+            <div class="content">
+              <h1>SAC</h1>
+              <h2>Serviço de Atendimento ao Cliente</h2>
+              <p>Caso você queira deixar algum feedback, preencha o formulário abaixo teremos o enorme prazer em atendê-lo responderemos em até 48h.</p>
+            </div>
+           </div>
+          </div>
+
+          <div class="row">
+            <div class="col_6">
+              <div class="input_group">
+                <label>Nome<em>*</em></label>
+                <input type="text" name="full_name'">
+              </div>
+            </div>
+
+            <div class="col_6">
+              <div class="input_group">
+                <label>E-mail<em>*</em></label>
+                <input type="email" name="email">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col_6">
+              <div class="input_group">
+                <label>Telefone ou Whatsapp<em>*</em></label>
+                <input type="tel" name="phone" placeholder="(00) 00000-0000" class="phone">
+              </div>
+            </div>
+
+            <div class="col_6">
+              <div class="input_group">
+                <label>CPF<em>*</em></label>
+                <input type="text" name="cpf" placeholder="000.000.000-00" class="cpf">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col_6">
+              <div class="input_group">
+                <label>Estado<em>*</em></label>
+                <select name="state"></select>
+              </div>
+            </div>
+
+            <div class="col_6">
+              <div class="input_group">
+                <label>Cidade<em>*</em></label>
+                <select name="city"></select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col_12">
+              <div class="input_group">
+                <label>Deixe seu feedback<em>*</em></label>
+                <div class="radio_group">
+                  <div class="opt">
+                    <label><input type="radio" name="feedback" value="elogio"> Elogio</label>
+                  </div>
+                  <div class="opt">
+                    <label><input type="radio" name="feedback" value="duvida"> Dúvida</label>
+                  </div>
+                  <div class="opt">
+                    <label><input type="radio" name="feedback" value="denuncia"> Denúncia</label>
+                  </div>
+                  <div class="opt">
+                    <label><input type="radio" name="feedback" value="solicitacao"> Solicitação</label>
+                  </div>
+                  <div class="opt">
+                    <label><input type="radio" name="feedback" value="sugestao"> Sugestão</label>
+                  </div>
+                  <div class="opt">
+                    <label><input type="radio" name="feedback" value="reclamacao"> Reclamação</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col_12">
+              <div class="input_group">
+                <label>Assunto<em>*</em></label>
+                <input type="text" name="subject">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col_12">
+              <div class="input_group">
+                <label>Anexar (opcional)</label>
+                <div class="upload">
+                  <input type="file" name="file_upload" id="file_upload">
+                  <label for="file_upload"><i class="fa-solid fa-cloud-arrow-down"></i> Upload do arquivo</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col_12">
+              <div class="input_group">
+                <label>Mensagem</label>
+                <textarea name="message" rows="8"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn">
+            <button type="button" class="btn_main">Enviar mensagem</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ajax.js"></script>
+  </body>
+</html>
